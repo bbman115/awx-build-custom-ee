@@ -1,5 +1,2 @@
 hvac
 requests
-pywinrm
-pykerberos
-pysnmp
