@@ -9,9 +9,7 @@ In this example :
 - EE size at the end is around 500MB (where official awx-ee that embbed a lot more stuff is 1.75GB)
 
 Project has been tested & validated with 
-- ansible-core 2.18.0 
 - ansible-builder 3.1.0
-- python 3.11.2
 - Docker version 27.3.1, build ce12230
 
 ## Requirements
@@ -25,7 +23,8 @@ Project has been tested & validated with
     - which ansible collections you need.
     - which python lib you need. 
     - which CentOS 'OS packages' you need.
-    - which ansible-core version you want to working with.
+
+*Note: ansible-core & ansible-runner version aren't specified so they will use the latest available. If needed you can change that in `execution-environment.yml`.*
 
 ## Step-by-step
 1) Add ansible collections you need into `requirements.yml`.
