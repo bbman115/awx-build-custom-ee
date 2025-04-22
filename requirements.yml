@@ -1,7 +1,28 @@
 ---
 collections:
 -  name: community.hashi_vault
+-  name: ansible.netcommon
 -  name: community.zabbix
+-  name: ansible.utils
+-  name: community.general
+-  name: junipernetworks.junos
+-  name: amazon.aws
+-  name: ansible.builtin
+-  name: ansible.utils
+-  name: ansible.windows
+-  name: awx.awx
+-  name: azure.azcollection
+-  name: cisco.ios
+-  name: cloud.common
+-  name: community.aws
+-  name: community.dns
+-  name: community.docker
+-  name: community.vmware
+-  name: community.windows
+-  name: dellemc.openmanage
+-  name: kubernetes.core
+-  name: vmware.vmware
+-  name: vmware.vmware_rest
 
 # if needed, you can specify the version of collection you want, else it will download the latest by default.
 # Example :
