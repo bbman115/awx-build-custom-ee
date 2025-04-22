@@ -8,7 +8,6 @@ collections:
 -  name: junipernetworks.junos
 -  name: amazon.aws
 -  name: ansible.builtin
--  name: ansible.utils
 -  name: ansible.windows
 -  name: awx.awx
 -  name: azure.azcollection
