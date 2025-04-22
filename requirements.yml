@@ -7,7 +7,6 @@ collections:
 -  name: community.general
 -  name: junipernetworks.junos
 -  name: amazon.aws
--  name: ansible.builtin
 -  name: ansible.windows
 -  name: awx.awx
 -  name: azure.azcollection
