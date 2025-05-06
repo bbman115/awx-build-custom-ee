@@ -24,6 +24,7 @@ additional_build_files:
 additional_build_steps:
   append_base:
     - RUN $PYCMD -m pip install -U pip
+    - RUN /usr/bin/python3 -m pip install --upgrade pip
 
 # RUN instructions within prepend & append are only here to see what happened when image is built
   prepend_final: |
