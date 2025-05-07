@@ -24,9 +24,9 @@ additional_build_files:
 additional_build_steps:
   append_base:
     - RUN $PYCMD -m pip install -U pip
-    - RUN useradd -m -u 1000 bvroot
-    - RUN passwd bvroot -p <vY8lia4fjtgWll4qNSpM>
-    - USER myuser
+   # - RUN useradd -m -u 1000 bvroot
+   # - RUN passwd bvroot -p <vY8lia4fjtgWll4qNSpM>
+   # - USER myuser
     - RUN sudo dnf update -y
     - RUN sudo dnf install openssl-devel bzip2-devel libffi-devel -y
     - RUN sudo dnf groupinstall "Development Tools"
