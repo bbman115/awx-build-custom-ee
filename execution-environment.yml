@@ -31,10 +31,10 @@ additional_build_steps:
     - RUN dnf install openssl-devel bzip2-devel libffi-devel -y
     - RUN dnf group install "Development Tools" -y
     - RUN VERSION=3.13.3
-    - ADD https://www.python.org/ftp/python/$VERSION/Python-$VERSION.tgz /tmp/Python-$VERSION.tgz
-    - RUN tar -xzf /tmp/Python-$VERSION.tgz
-    - RUN cd /tmp/Python-$VERSION.tgz/Python-$VERSION
-    - RUN /tmp/Python-$VERSION.tgz/Python-$VERSION/./configure --enable-optimizations
+    - ADD https://www.python.org/ftp/python/3.13.3/Python-3.13.3.tgz /tmp/Python-3.13.3.tgz
+    - RUN tar -xzf /tmp/Python-3.13.3.tgz
+    - RUN cd /tmp/Python-3.13.3.tgz/Python-3.13.3
+    - RUN /tmp/Python-3.13.3.tgz/Python-3.13.3/./configure --enable-optimizations
     - RUN make altinstall
     - RUN /usr/local/bin/python3.13 -m pip install --upgrade pip
     - RUN pip3.13 install ansible --user
