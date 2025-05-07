@@ -5,7 +5,7 @@ collections:
 -  name: community.zabbix
 -  name: ansible.utils
 #-  name: community.general
--  name: junipernetworks.junos
+#-  name: junipernetworks.junos
 -  name: amazon.aws
 -  name: ansible.windows
 -  name: awx.awx
