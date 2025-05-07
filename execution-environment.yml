@@ -37,8 +37,8 @@ additional_build_steps:
    # - RUN cd /tmp/Python-3.13.3
    # - RUN ./configure --enable-optimizations
    # - RUN make altinstall
-    - RUN /usr/local/bin/python3.13 -m pip install --upgrade pip
-    - RUN pip3.13 install ansible --user
+   # - RUN /usr/local/bin/python3.13 -m pip install --upgrade pip
+   # - RUN pip3.13 install ansible --user
 
 # RUN instructions within prepend & append are only here to see what happened when image is built
   prepend_final: |
