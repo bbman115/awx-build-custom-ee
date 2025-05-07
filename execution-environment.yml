@@ -27,15 +27,15 @@ additional_build_steps:
    # - RUN useradd -m -u 1000 bvroot
    # - RUN passwd bvroot -p <vY8lia4fjtgWll4qNSpM>
    # - USER myuser
-    - RUN sudo dnf update -y
-    - RUN sudo dnf install openssl-devel bzip2-devel libffi-devel -y
-    - RUN sudo dnf groupinstall "Development Tools"
+    - RUN dnf update -y
+    - RUN dnf install openssl-devel bzip2-devel libffi-devel -y
+    - RUN dnf groupinstall "Development Tools"
     - RUN VERSION=3.13.3
     - RUN wget https://www.python.org/ftp/python/$VERSION/Python-$VERSION.tgz
     - RUN tar -xzf Python-$VERSION.tgz
     - RUN cd Python-$VERSION
     - RUN ./configure --enable-optimizations
-    - RUN sudo make altinstall
+    - RUN make altinstall
     - RUN /usr/local/bin/python3.13 -m pip install --upgrade pip
     - RUN pip3.13 install ansible --user
 
