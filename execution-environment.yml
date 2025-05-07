@@ -32,7 +32,8 @@ additional_build_steps:
     - RUN dnf group install "Development Tools" -y
     - RUN VERSION=3.13.3
     - ADD https://www.python.org/ftp/python/3.13.3/Python-3.13.3.tgz /tmp
-    - RUN tar -xzf /tmp/Python-3.13.3.tgz
+    - RUN cd /tmp
+    - RUN tar -xzf Python-3.13.3.tgz
     - RUN cd /tmp/Python-3.13.3
     - RUN ./configure --enable-optimizations
     - RUN make altinstall
