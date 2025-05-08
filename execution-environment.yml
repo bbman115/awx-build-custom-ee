@@ -15,7 +15,7 @@ dependencies:
 
 images:
   base_image:
-    name: 'quay.io/centos/centos:stream10'
+    name: 'quay.io/almalinuxorg/10-kitten-minimal'
 
 additional_build_files:
     - src: files/ansible.cfg
