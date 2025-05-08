@@ -23,15 +23,14 @@ additional_build_files:
 
 additional_build_steps:
   append_base:
+    - RUN dnf update -y
+    - RUN dnf install python312 openssl-devel bzip2-devel libffi-devel -y
     - RUN $PYCMD -m pip install -U pip
    # - RUN useradd -m -u 1000 bvroot
    # - RUN passwd bvroot -p <vY8lia4fjtgWll4qNSpM>
    # - USER myuser
-    - RUN dnf update -y
-    - RUN dnf install openssl-devel bzip2-devel libffi-devel -y
     - RUN dnf group install "Development Tools" -y
     - RUN VERSION=3.13.3
-    - RUN python3 -m pip install --upgrade pip
    # - ADD https://www.python.org/ftp/python/3.13.3/Python-3.13.3.tgz /tmp/Python-3.13.3
    # - RUN cd /tmp/Python-3.13.3
    # - RUN tar -xzf Python-3.13.3.tgz
