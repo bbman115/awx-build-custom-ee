@@ -15,7 +15,7 @@ dependencies:
 
 images:
   base_image:
-    name: 'quay.io/almalinuxorg/10-kitten-minimal'
+    name: 'quay.io/almalinuxorg/10-kitten-minimal:10-kitten-20250424'
 
 additional_build_files:
     - src: files/ansible.cfg
