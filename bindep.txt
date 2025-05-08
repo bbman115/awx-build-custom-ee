@@ -1,5 +1,5 @@
 git-core [platform:rpm]
-python3.12-devel [platform:rpm compile]
+python3.12 [platform:rpm compile]
 libcurl-devel [platform:rpm compile]
 subversion [platform:rpm]
 subversion [platform:dpkg]
